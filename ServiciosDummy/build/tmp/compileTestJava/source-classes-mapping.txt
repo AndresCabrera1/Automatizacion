@@ -1,4 +1,0 @@
-com/co/servicios/dummy/runner/RegistrarUsuario.java
- com.co.servicios.dummy.runner.RegistrarUsuario
-com/co/servicios/dummy/stepdefinition/RegistrarUsuarioStepDefinitions.java
- com.co.servicios.dummy.stepdefinition.RegistrarUsuarioStepDefinitions

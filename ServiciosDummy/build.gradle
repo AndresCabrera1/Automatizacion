@@ -22,7 +22,6 @@ buildscript {
 
 test {
     systemProperty "file.encoding", "utf-8"
-
 }
 
 ext {
@@ -39,7 +38,7 @@ dependencies {
 
     testCompile "net.serenity-bdd:serenity-core:$rootProject.ext.serenityVersion"
     testCompile "net.serenity-bdd:serenity-junit:$rootProject.ext.serenityVersion"
-    testCompile group: 'junit', name: 'junit', version: '4.13'
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.7.0-M1'
     testCompile('org.assertj:assertj-core:3.11.1')
     testCompile('org.slf4j:slf4j-simple:1.7.25')
     compile "net.serenity-bdd:serenity-core:$rootProject.ext.serenityVersion"

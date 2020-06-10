@@ -2,8 +2,8 @@ package com.co.servicios.dummy.runner;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.SnippetType;
-import org.junit.runner.RunWith;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
+import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(

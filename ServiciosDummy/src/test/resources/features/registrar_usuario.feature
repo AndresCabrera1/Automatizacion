@@ -8,5 +8,6 @@
       Cuando ingresa y actualiza su <nombre> y <trabajo>
       Entonces verifica la informacion ingresada
 
-      Ejemplos: |    correo         | contrasena | nombre  |   trabajo        |
-                | eve.holt@reqres.in| cityslicka |Eve Holt | StatusCode Weekly|
+      Ejemplos:
+        |    correo         | contrasena | nombre  |   trabajo        |
+        | eve.holt@reqres.in| cityslicka |Eve Holt | StatusCode Weekly|

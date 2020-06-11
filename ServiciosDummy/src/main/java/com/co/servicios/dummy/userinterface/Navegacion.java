@@ -3,7 +3,9 @@ package com.co.servicios.dummy.userinterface;
 public enum Navegacion {
 
     Registrar("/api/register"),
-    login("/api/login");
+    login("/api/login"),
+    Actualizar("/api/users/"),
+    Consultar("/api/users/");
 
     private final String url;
 

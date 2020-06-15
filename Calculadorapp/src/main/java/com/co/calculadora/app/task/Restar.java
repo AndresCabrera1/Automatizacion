@@ -13,29 +13,29 @@ import net.serenitybdd.screenplay.questions.Text;
 import net.thucydides.core.annotations.Step;
 
 
-public class Sumar implements Task {
+public class Restar implements Task {
 
     private String dato1,dato2;
 
-    public Sumar(String dato1, String dato2) {
+    public Restar(String dato1, String dato2) {
         this.dato1 = dato1;
         this.dato2 = dato2;
     }
 
     @Override
-    @Step("{0} realiza una sumatoria")
+    @Step("{0} realiza una resta")
     public <T extends Actor> void performAs(T actor) {
-                actor.attemptsTo(LoadingDriver.time(),
-                        PresionarTeclaCalculadora.enter(dato1),
-                        Click.on(TXT_SUMA),
-                        PresionarTeclaCalculadora.enter(dato2),
-                        Click.on(TXT_IGUAL)
+        actor.attemptsTo(
+                PresionarTeclaCalculadora.enter(dato1),
+                Click.on(TXT_RESTA),
+                PresionarTeclaCalculadora.enter(dato2),
+                Click.on(TXT_IGUAL)
         );
-        setSuma(Text.of(TXT_RESULTADO).viewedBy(actor).asString());
+        setResta(Text.of(TXT_RESULTADO).viewedBy(actor).asString());
     }
 
-    public static Performable total(String dato1,String dato2){
-        return Tasks.instrumented(Sumar.class,dato1,dato2);
+    public static Performable total(String dato1, String dato2){
+        return Tasks.instrumented(Restar.class,dato1,dato2);
     }
 
 

@@ -1,19 +1,15 @@
-package com.co.calculadora.app.task;
+package com.co.calculadora.app.interaction;
 
-import com.co.calculadora.app.interaction.LoadingDriver;
-import com.co.calculadora.app.interaction.PresionarTeclaCalculadora;
 import static com.co.calculadora.app.model.DatosOperacionesBasicas.*;
 import static com.co.calculadora.app.userinterface.BotonesCalculadora.*;
-import net.serenitybdd.screenplay.Actor;
-import net.serenitybdd.screenplay.Performable;
-import net.serenitybdd.screenplay.Task;
-import net.serenitybdd.screenplay.Tasks;
+
+import net.serenitybdd.screenplay.*;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.questions.Text;
 import net.thucydides.core.annotations.Step;
 
 
-public class Sumar implements Task {
+public class Sumar implements Interaction {
 
     private String dato1,dato2;
 
@@ -32,6 +28,7 @@ public class Sumar implements Task {
                         Click.on(TXT_IGUAL)
         );
         setSuma(Text.of(TXT_RESULTADO).viewedBy(actor).asString());
+
     }
 
     public static Performable total(String dato1,String dato2){

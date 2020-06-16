@@ -2,10 +2,9 @@
 
   Característica: Operaciones basicas en la app calculadora
 
-    Escenario: Ana desea saber cuantas manzanas tiene
-      Dado Ana tiene 20 manzanas, pero viene su hermano y se come 6
-      Cuando vienen tres amigos y se comen la mitad de las que quedan, pero traen el triple de las que se comio su hermano
-      Entonces mas tarde su padre trae dos manzanas, resultado esperado 22
 
-
+      Escenario: ana desea saber el resultado de su fraccion
+        Dado que ana realiza una suma 200 + 300 y una resta 1000 - 400
+        Cuando realiza una divicion 500 ÷ 20 y mutiplicacion 250 * 3
+        Entonces el resultado es perado es 1875.0
 

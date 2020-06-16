@@ -5,9 +5,10 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.annotations.Subject;
 
-@Subject("{0} obtiene el resultado de la operacion realizada ")
+@Subject("obtiene el resultado de la operacion realizada ")
 public class TotalOperaciones implements Question<Boolean> {
     private String resEsperado;
+
 
     public TotalOperaciones(String resEsperado) {
         this.resEsperado = resEsperado;
@@ -15,8 +16,9 @@ public class TotalOperaciones implements Question<Boolean> {
 
     @Override
     public Boolean answeredBy(Actor actor) {
+        System.out.println(" -->" + (Double.parseDouble(getSuma()) + Double.parseDouble(getResta()) + Double.parseDouble(getMult()) + Double.parseDouble(getDiv())));
 
-        return getSuma().equalsIgnoreCase(resEsperado);
+        return String.valueOf((Double.parseDouble(getSuma()) + Double.parseDouble(getResta()) + Double.parseDouble(getMult()) + Double.parseDouble(getDiv()))).equalsIgnoreCase(resEsperado);
     }
 
     public static TotalOperaciones igual( String resEsperado){

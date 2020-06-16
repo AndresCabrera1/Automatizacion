@@ -1,15 +1,17 @@
-package com.co.calculadora.app.interaction;
+package com.co.calculadora.app.task;
 
 import static com.co.calculadora.app.model.DatosOperacionesBasicas.*;
 import static com.co.calculadora.app.userinterface.BotonesCalculadora.*;
 
+import com.co.calculadora.app.interaction.LoadingDriver;
+import com.co.calculadora.app.interaction.PresionarTeclaCalculadora;
 import net.serenitybdd.screenplay.*;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.questions.Text;
 import net.thucydides.core.annotations.Step;
 
 
-public class Sumar implements Interaction {
+public class Sumar implements Task {
 
     private String dato1,dato2;
 

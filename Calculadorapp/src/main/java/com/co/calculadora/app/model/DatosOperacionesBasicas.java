@@ -33,6 +33,6 @@ public class DatosOperacionesBasicas {
     }
 
     public static void setMult(String Mult) {
-        mult = Mult;
+       mult = Mult;
     }
 }

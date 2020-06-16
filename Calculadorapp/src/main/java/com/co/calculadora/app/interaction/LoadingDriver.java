@@ -15,7 +15,7 @@ public class LoadingDriver implements Interaction {
     @Step("{0} espera a que cargue la aplicacion")
     public <T extends Actor> void performAs(T actor) {
         WebDriver webDriver = getProxiedDriver();
-        webDriver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
+        webDriver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
     }
 
     public static Interaction time(){
